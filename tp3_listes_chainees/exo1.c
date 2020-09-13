@@ -141,6 +141,7 @@ void    Afficher(plan *mon_plan)
     while (pt)
     {
         printf("[%d, %d]=>",pt->x,pt->y);
+        pt = pt->next;
     }
     printf("NULL");
 }
@@ -190,7 +191,7 @@ int main()
             Afficher(pl_1);
             break;
         default:
-            printf("\nchoix incorect");
+            printf("\nvotre choix est incorect");
             break;
         }
     } while (r);
